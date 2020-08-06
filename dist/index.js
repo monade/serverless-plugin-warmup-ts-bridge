@@ -28,7 +28,7 @@ var __awaiter =
     });
   };
 const path = require('path');
-const modulePath = path.join(__dirname, '..');
+const modulePath = path.join(__dirname, '../..');
 const fs = require(path.join(modulePath, 'fs-extra'));
 const defaultDir = '_warmup';
 const opts = {
