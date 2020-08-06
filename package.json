@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-warmup-ts-bridge",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "private": true,
   "author": "Suguru Motegi <suguru.motegi@gmail.com>",
@@ -34,5 +34,8 @@
   "prettier": {
     "printWidth": 120,
     "singleQuote": true
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1"
   }
 }
