@@ -1,8 +1,7 @@
 {
   "name": "serverless-plugin-warmup-ts-bridge",
   "version": "0.1.6",
-  "main": "dist/index.js",
-  "private": true,
+  "main": "index.js",
   "author": "Suguru Motegi <suguru.motegi@gmail.com>",
   "license": "MIT",
   "scripts": {
