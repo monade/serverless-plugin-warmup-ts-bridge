@@ -15,7 +15,7 @@ modify(
     class extends Class {
       constructor(...args: any[]) {
         super(...args);
-        this.hooks = {
+        (this as any).hooks = {
           ...this.hooks,
           'before:package:createDeploymentArtifacts': this.beforeArtifacts,
           'after:package:createDeploymentArtifacts': this.afterArtifacts,
