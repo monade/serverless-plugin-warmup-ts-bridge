@@ -27,6 +27,8 @@ modify(
       }
       beforeArtifacts = async () => {
         await this.compileTs();
+        await this.copyExtras();
+        await this.copyDependencies(true);
         const target = path.resolve(this.serverless.config.servicePath, opts.warmupDir);
         const warmUpDirectory = path.resolve(this.originalServicePath, opts.warmupDir);
         if (!fs.existsSync(warmUpDirectory)) fs.mkdirSync(warmUpDirectory);
